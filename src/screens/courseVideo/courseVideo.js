@@ -73,8 +73,5 @@ export const CourseVideo = () => {
   );
 };
 {
-  /* <VideoPlayer
-      video={{uri: 'https://youtu.be/3EJlovevfcA'}}
-      autoplay={false}
-      defaultMuted={true}></VideoPlayer>; */
+  
 }

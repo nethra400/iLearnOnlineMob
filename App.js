@@ -7,15 +7,27 @@ import {CourseVideo} from './src/screens/courseVideo/courseVideo';
 import Recorder from './src/screens/recorder/recorder';
 import CourseList from './src/screens/courseList/courseList';
 import {CameraRollImage} from './src/screens/cameraRoll/cameraRoll';
+import {VideoContent} from './src/screens/videoContent/videoContent';
+import {Home} from './src/screens/welcome/home';
+import {NavigationContainer} from '@react-navigation/native';
+
+import TabNav from './src/navigation/tabs';
+import DrawerNav from './src/navigation/drawer';
 const App = () => {
   return (
-    //<LoginScreen></LoginScreen>
+    <NavigationContainer>
+      <DrawerNav></DrawerNav>
+    </NavigationContainer>
+
+   // <LoginScreen></LoginScreen>
     //<RegisterScreen></RegisterScreen>
     //<CourseContent></CourseContent>
     //<CourseVideo></CourseVideo>
-     //<Recorder></Recorder>
+    // <Recorder></Recorder>
     //<CourseList></CourseList>
-    <CameraRollImage></CameraRollImage>
+     //<CameraRollImage></CameraRollImage>
+    //<VideoContent></VideoContent>
+    //<Home></Home>
   );
 };
 

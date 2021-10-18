@@ -39,12 +39,14 @@ export const LoginScreen = () => {
         {props => (
           <View>
             <TextInput
+            
               style={styles.input}
               placeholder="Mobile"
               onChangeText={props.handleChange('mobile')}
               value={props.values.mobile}
               keyboardType="numeric"
               onBlur={props.handleBlur('mobile')}
+              
             />
             <Text style={styles.errorText}>
               {props.touched.mobile && props.errors.mobile}
@@ -73,3 +75,4 @@ export const LoginScreen = () => {
     </View>
   );
 };
+export default LoginScreen;

@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {View, Text, TouchableOpacity, Image, Button} from 'react-native';
 import {launchCamera} from 'react-native-image-picker';
-
-export const CameraRollImage = () => {
+ const CameraRollImage = () => {
   const [photo, setPhoto] = useState(null);
   return (
     <View
@@ -87,3 +86,4 @@ export const CameraRollImage = () => {
     </View>
   );
 };
+export default CameraRollImage;

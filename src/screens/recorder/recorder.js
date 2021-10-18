@@ -6,6 +6,7 @@ import {
   StyleSheet,
   ActivityIndicator,
 } from 'react-native';
+import CameraRoll from '@react-native-community/cameraroll';
 import {RNCamera} from 'react-native-camera';
 
 export default class Recorder extends React.Component {
@@ -22,6 +23,7 @@ export default class Recorder extends React.Component {
     this.setState({recording: true});
     const options = { quality: 0.5, base64: true };
     const data = await this.camera.recordAsync(options)
+    CameraRoll.save(data.uri);
     console.log(data.uri);
   }
   stopRecording = () => {
